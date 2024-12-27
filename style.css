@@ -63,3 +63,50 @@ footer {
   background: #333;
   color: #fff;
 }
+
+/* Colores */
+:root {
+  --primary-color: #4CAF50; /* Verde moderno */
+  --secondary-color: #333;
+  --background-color: #f4f4f4;
+  --text-color: #555;
+  --highlight-color: #ff9800; /* Naranja */
+}
+
+/* Aplica los colores */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--primary-color);
+}
+
+.cta {
+  background: var(--highlight-color);
+  color: #fff;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.menu a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
